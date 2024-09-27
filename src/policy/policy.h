@@ -14,6 +14,7 @@
 
 #include <cstdint>
 #include <string>
+#include <logging.h>
 
 class CCoinsViewCache;
 class CFeeRate;
