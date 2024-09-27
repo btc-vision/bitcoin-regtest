@@ -104,6 +104,7 @@ bool IsStandardTx(const CTransaction& tx, const std::optional<unsigned>& max_dat
     // to MAX_STANDARD_TX_WEIGHT mitigates CPU exhaustion attacks.
     unsigned int sz = GetTransactionWeight(tx);
     if (sz > MAX_STANDARD_TX_WEIGHT) {
+        LogPrintf("Max size reached. Was %u, allowed %u\n", sz, MAX_STANDARD_TX_WEIGHT);
         reason = "tx-size";
         return false;
     }
