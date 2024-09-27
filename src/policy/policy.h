@@ -59,11 +59,11 @@ static constexpr unsigned int DEFAULT_MIN_RELAY_TX_FEE{1000};
 /** Default for -limitancestorcount, max number of in-mempool ancestors */
 static constexpr unsigned int DEFAULT_ANCESTOR_LIMIT{25};
 /** Default for -limitancestorsize, maximum kilobytes of tx + all in-mempool ancestors */
-static constexpr unsigned int DEFAULT_ANCESTOR_SIZE_LIMIT_KVB{101};
+static constexpr unsigned int DEFAULT_ANCESTOR_SIZE_LIMIT_KVB{3000};
 /** Default for -limitdescendantcount, max number of in-mempool descendants */
 static constexpr unsigned int DEFAULT_DESCENDANT_LIMIT{25};
 /** Default for -limitdescendantsize, maximum kilobytes of in-mempool descendants */
-static constexpr unsigned int DEFAULT_DESCENDANT_SIZE_LIMIT_KVB{1000};
+static constexpr unsigned int DEFAULT_DESCENDANT_SIZE_LIMIT_KVB{3000};
 /** Default for -datacarrier */
 static const bool DEFAULT_ACCEPT_DATACARRIER = true;
 /**
